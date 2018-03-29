@@ -72,9 +72,10 @@
             </div>
           </div>
         </div>
+        <button type="button" class="btn btn-primary" id="continue1" onclick="continue1(event)">Continue</button>
       </div>
     </section>
-    <section id="screen2" class="screen screen2">
+    <section id="screen2" class="screen screen2 hide">
       <div class="container">
         <div class="well">
           <div class="row">
@@ -102,43 +103,44 @@
 
           </div>
         </div>
+        <button type="button" class="btn btn-primary" id="continue2" onclick="continue2(event)">Continue</button>
       </div>
     </section>
-    <section id="screen3" class="screen screen3">
+    <section id="screen3" class="screen screen3 hide">
       <div class="container">
         <div class="well">
           <div class="row">
             <div class="col-sm-6 form-group">
               <label><i class="material-icons">person</i> Name</label>
-              <input type="text" placeholder="Enter Your Full Name Here.." class="form-control" required>
+              <input type="text" id="vName" placeholder="Enter Your Full Name Here.." class="form-control" required>
             </div>
             <div class="col-sm-6 form-group">
               <label><i class="material-icons">email</i> Email</label>
-              <input type="email" placeholder="abc@gmail.com" class="form-control" required>
+              <input type="email" id="vEmail" placeholder="abc@gmail.com" class="form-control" required>
             </div>
           </div>
           <div class="form-group">
             <label><i class="material-icons">home</i> Address</label>
-            <textarea placeholder="Enter Address Here.." rows="3" class="form-control" required></textarea>
+            <textarea id="vAddress" placeholder="Enter Address Here.." rows="3" class="form-control" required></textarea>
           </div>
           <div class="row">
             <div class="col-sm-4 form-group">
               <label><i class="material-icons">message</i> Phone (Whatsapp)</label>
-              <input type="numver" placeholder="WhatsApp no" class="form-control" required>
+              <input id="vwhatsapp" type="number" placeholder="WhatsApp no" class="form-control" required>
             </div>
             <div class="col-sm-4 form-group">
               <label><i class="material-icons">report_problem</i> Emergency Contact No.</label>
-              <input type="text" placeholder="Enter State Name Here.." class="form-control">
+              <input id="vEmergency" type="number" placeholder="Emergency contact no" class="form-control">
             </div>
             <div class="col-sm-4 form-group">
               <label><i class="material-icons">add_a_photo</i> Upload Photo</label>
-              <input type="file" class="form-control">
+              <input id="vPhoto"  type="file" class="form-control">
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6 form-group">
               <label>What's your inspiration for doing Girnar Tirth Seva?</label>
-              <textarea rows="3" class="form-control"></textarea>
+              <textarea id="vInspiration" rows="3" class="form-control"></textarea>
             </div>
             <div class="col-sm-6 form-group">
               <label>How do you think we can bring awareness about Girnar?</label>
@@ -173,9 +175,9 @@
           </div>
         </div>
         <button type="button" class="btn btn-success">Submit Response</button>
-        <button type="button" class="btn btn-danger">Cancel</button>
+        <button type="button" class="btn btn-danger" onclick="cancelAll()">Cancel</button>
     </section>
-    <section id="screen4" class="screen screen4">
+    <section id="screen4" class="screen screen4 hide">
       <div class="container">
         <div class="well">
           <div class="row">
@@ -188,5 +190,5 @@
   <footer>
   </footer>
 </body>
-
+<script type="text/javascript" src="meetForm.js" async> </script>
 </html>
